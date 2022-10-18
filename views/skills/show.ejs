@@ -9,15 +9,7 @@
 </head>
 <body>
     <a href="/">Home</a>
-    <h1>All Skills</h1>
-    <ul>
-      <% skills.forEach(function(t) { %>
-        <li>
-          <a href="/skills/<%= t.id %>"><%= t.skills %></a>
-            - 
-          <%= t.done ? 'done' : 'not done' %>
-        </li>
-      <% }); %>
-    </ul>
+    <h3><%= skill.skill %></h3>
+    <h3>Complete: <%= skill.done ? 'Yes' : 'No' %></h3>
   </body>
 </html>
