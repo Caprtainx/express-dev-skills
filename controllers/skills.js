@@ -8,11 +8,13 @@ module.exports = {
 function show(req, res) {
   res.render('skills/show', {
     skill: skill.getOne(req.params.id),
+    title: 'Skill Details'
   });
 }
   
 function index(req, res) {
     res.render('skills/index', {
-      skills: skill.getAll()
+      skills: skill.getAll(),
+      title: 'All Skills'
      });
   }
