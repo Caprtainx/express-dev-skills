@@ -6,6 +6,12 @@
     <a href="/todos/new">Add Skills</a>
     <% skills.forEach(function(t) { %>
       <li>
+        <form 
+          action="/skills/<%= t.id %>?_method=DELETE"
+          class="delete-form"
+          method="POST"
+          >
+        </form>
         <a href="/skills/<%= t.id %>"><%= t.skill %></a>
           - 
         <%= t.fun ? 'True' : 'False' %>
