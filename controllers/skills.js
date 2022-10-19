@@ -7,7 +7,7 @@ module.exports = {
 };
 
 function newSkill(req, res) {
-  res.render('todos/new', { title: 'New Skill'});
+  res.render('skills/new', { title: 'New Skill'});
 }
 
 function show(req, res) {
